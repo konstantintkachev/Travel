@@ -1,0 +1,150 @@
+.ask-us {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  grid-template-rows: 1fr;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 140px;
+}
+
+.ask-us__background {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.ask-us img {
+  display: block;
+  height: 100%;
+}
+
+.ask-us__popup {
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  max-width: 656px;
+  justify-self: end;
+  padding: 50px;
+  align-self: center;
+  align-items: center;
+  background-color: $white;
+  box-shadow: 0 0 30px 0 rgba($text-grey, 0.1);
+  border-radius: 4px;
+}
+
+.ask-us__title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  margin: 0;
+}
+
+.ask-us__text {
+  line-height: 24px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 24px;
+}
+
+.ask-us__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 557px;
+}
+
+.ask-us__field {
+  width: 269px;
+  padding: 0;
+}
+
+.ask-us__button {
+  line-height: 14px;
+  max-width: 176px;
+  margin: 25px auto 0;
+  padding-top: 18px;
+  padding-bottom: 17px;
+}
+
+.ask-us__field input {
+  width: 269px;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 14px 15px 17px 24px;
+  letter-spacing: 0.6px;
+  border: 1px solid $light-opacity;
+}
+
+.ask-us__field .ask-us__email {
+  padding-left: 14px;
+}
+
+@media (max-width: $tablet-max) {
+  .ask-us {
+    padding-top: 109px;
+  }
+
+  .ask-us img {
+    width: 100%;
+  }
+
+  .ask-us__popup {
+    justify-self: center;
+    padding-top: 47px;
+  }
+
+  .ask-us__text {
+    margin-top: 10px;
+  }
+
+  .ask-us__button {
+    max-width: 250px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .ask-us {
+    padding-top: 51px;
+  }
+
+  .ask-us__background {
+    display: none;
+  }
+
+  .ask-us__popup {
+    width: 100%;
+    padding: 50px 16px;
+    max-width: 100%;
+    background-color: $light-grey;
+    box-shadow: none;
+  }
+
+  .ask-us__text {
+    margin-top: 18px;
+    margin-bottom: 20px;
+  }
+
+  .ask-us__form {
+    justify-self: center;
+  }
+
+  .ask-us__field {
+    width: 100%;
+    align-content: center;
+    margin-bottom: 20px;
+  }
+
+  .ask-us__button {
+    width: 100%;
+    max-width: 288px;
+    margin: 0 auto; 
+  }
+
+  .ask-us__field input {
+    width: 100%; 
+  }
+}

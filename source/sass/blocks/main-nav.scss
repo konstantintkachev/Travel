@@ -1,0 +1,143 @@
+.main-nav {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  position: relative;
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  align-items: center;
+}
+
+.main-nav__item {
+  margin-right: 40px;
+}
+
+.main-nav__link {
+  color: $dark;
+}
+
+.main-nav__link:hover,
+.main-nav__link:focus {
+  color: $accent;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__phone {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  line-height: 32px;
+  color: $dark;
+  text-decoration: underline;
+  padding-left: 30px;
+  svg {
+    padding-top: 2px;
+  }
+  span {
+    margin-left: 8px;
+  }
+}
+
+.main-nav__phone:hover {
+  color: $accent;
+}
+
+@media (max-width: $tablet-max) {
+  .main-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__list {
+    display: flex;
+    z-index: 10;
+  }
+
+  .main-nav--closed .main-nav__toggle {
+    background-image: url("../img/menu-open.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 30px 30px;
+    background-color: $accent-hover;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    background-image: url("../img/modal-close.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: inherit;
+    z-index: 10;
+  }
+
+  //   .main-nav--nojs .main-nav__toggle {
+  //     display: none;
+  //   }
+
+  .main-nav__list {
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: flex-start;
+    min-width: 320px;
+    min-height: 568px;
+    background-color: $white;
+    padding: 104px 0 254px;
+  }
+
+  .main-nav__item {
+    width: 100%;
+    margin: 0;
+    background-color: $light-grey;
+  }
+
+  .main-nav__toggle {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    background-color: $accent-hover;
+    width: 72px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+  }
+
+  .main-nav__link {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 17px 35px 17px 16px;
+    display: block;
+    position: relative;
+  }
+
+  .main-nav__link::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 16px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/arrow-menu.svg");
+    opacity: 0.5;
+  }
+
+  .main-nav__phone {
+    display: none;
+  }
+}

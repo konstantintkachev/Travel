@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Путешествие по Европе</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" width="57" height="22" src="../img/logo_way.svg" alt="Логотип Way">
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">О путешествии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Цены</a>
+          </li>
+        </ul>
+        <button class="main-nav__toggle" type="button" aria-label="Кнопка переключения меню"></button>
+        <a class="main-nav__phone" href="tel:749978468446">
+          <svg width="30" height="30">
+            <use xlink:href="./img/sprite.svg#phone"></use>
+          </svg>
+          <span>+7 (499) -784-684-46</span>
+        </a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="main-offer">
+        <div class="main-offer__background">
+          <source media="(max-width: 767px)" type="image/webp" srcset="
+              ./img/monastery-mobile.webp    1x,
+              ./img/monastery-mobile@2x.webp 2x
+            ">
+          <source media="(max-width: 1023px)" type="image/webp" srcset="
+              ./img/monastery-tablet.webp    1x,
+              ./img/monastery-tablet@2x.webp 2x
+            ">
+          <source type="image/webp" srcset="./img/monastery.webp 1x, ./img/monastery@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="
+              ./img/monastery-mobile.jpg    1x,
+              ./img/monastery-mobile@2x.jpg 2x
+            ">
+          <source media="(max-width: 1023px)" srcset="
+              ./img/monastery-tablet.jpg    1x,
+              ./img/monastery-tablet@2x.jpg 2x
+            ">
+          <img src="./img/monastery.jpg" srcset="./img/monastery@2x.jpg 2x" alt="Монастырь на вершине скалы" height="860" width="1920" class="main-offer__image">
+        </div>
+        <div class="main-offer__header-title">
+          <h1 class="main-offer__title">Путешествие по Европе</h1>
+          <p class="main-offer__text">
+            В этом туре вы откроете для себя Европу в новом свете. Вас ждет:
+            море, горы, а также потрясающая красота природы.
+          </p>
+          <a class="main-offer__button" href="#">
+            смотреть тур
+            <svg width="14" height="14" class="button-icon">
+              <use xlink:href="./img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="main-places">
+        <h2 class="main-places__title">Места посещения</h2>
+        <p class="main-places__description">
+          Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
+        </p>
+        <ul class="main-places__list">
+          <li class="main-places__item">
+            <h3 class="main-places__country">Греция</h3>
+            <div class="main-places__photo">
+              <picture>
+                <source media="(max-width: 1023px)" type="image/webp" srcset="
+                    ./img/greece-tablet.webp    1x,
+                    ./img/greece-tablet@2x.webp 2x
+                  ">
+                <source media="(max-width:1023px)" srcset="
+                    ./img/greece-tablet.jpg    1x,
+                    ./img/greece-tablet@2x.jpg 2x
+                  ">
+                <source type="image/webp" srcset="./img/greece.webp 1x, ./img/greece.webp 2x">
+                <img class="main-places__image" width="350" height="430" src="./img/greece.jpg" srcset="./img/greece@2x.jpg 2x" alt="Монастырь на вершине скалы">
+              </picture>
+            </div>
+            <div class="main-places__details">
+              <a class="main-places__button" href="#tabs" data-tabs-path="greece">смотреть подробнее</a>
+            </div>
+          </li>
+          <li class="main-places__item">
+            <h3 class="main-places__country">Албания</h3>
+            <div class="main-places__photo">
+              <picture>
+                <source media="(max-width:1023px)" type="image/webp" srcset="
+                    ./img/albania-tablet.webp    1x,
+                    ./img/albania-tablet@2x.webp 2x
+                  ">
+                <source media="(max-width:1023px)" srcset="
+                    ./img/albania-tablet.jpg    1x,
+                    ./img/albania-tablet@2x.jpg 2x
+                  ">
+                <source type="image/webp" srcset="./img/albania.webp 1x, ./img/albania.webp 2x">
+                <img class="main-places__image" width="350" height="430" src="./img/albania.jpg" srcset="./img/albania@2x.jpg 2x" alt="побережье Албании">
+              </picture>
+            </div>
+            <div class="main-places__details">
+              <a class="main-places__button" href="#tabs" data-tabs-path="albania">смотреть подробнее</a>
+            </div>
+          </li>
+          <li class="main-places__item">
+            <h3 class="main-places__country">Македония</h3>
+            <div class="main-places__photo">
+              <picture>
+                <source media="(max-width:1023px)" type="image/webp" srcset="
+                    ./img/maсedonia-tablet.webp    1x,
+                    ./img/maсedonia-tablet@2x.webp 2x
+                  ">
+                <source media="(max-width:1023px)" srcset="
+                    ./img/maсedonia-tablet.jpg    1x,
+                    ./img/maсedonia-tablet@2x.jpg 2x
+                  ">
+                <source type="image/webp" srcset="./img/maсedonia.webp 1x, ./img/maсedonia.webp 2x">
+                <img class="main-places__image" width="350" height="430" src="./img/maсedonia.jpg" srcset="./img/maсedonia@2x.jpg 2x" alt="Церковь на фоне море">
+              </picture>
+            </div>
+            <div class="main-places__details">
+              <a class="main-places__button" href="#tabs" data-tabs-path="macedonia">смотреть подробнее</a>
+            </div>
+          </li>
+          <li class="main-places__item">
+            <h3 class="main-places__country">Черногория</h3>
+            <div class="main-places__photo">
+              <picture>
+                <source media="(max-width:1023px)" type="image/webp" srcset="
+                    ./img/montenegro-tablet.webp    1x,
+                    ./img/montenegro-tablet@2x.webp 2x
+                  ">
+                <source media="(max-width:1023px)" srcset="
+                    ./img/montenegro-tablet.jpg    1x,
+                    ./img/montenegro-tablet@2x.jpg 2x
+                  ">
+                <source type="./image/webp" srcset="./img/montenegro.webp 1x, ./img/montenegro.webp 2x">
+                <img class="main-places__image" width="350" height="430" src="./img/montenegro.jpg" srcset="./img/montenegro@2x.jpg 2x" alt="Река в Черногории">
+              </picture>
+            </div>
+            <div class="main-places__details">
+              <a class="main-places__button" href="#tabs" data-tabs-path="montenegro">смотреть подробнее</a>
+            </div>
+          </li>
+          <li class="main-places__item">
+            <h3 class="main-places__country">Хорватия</h3>
+            <div class="main-places__photo">
+              <picture>
+                <source media="(max-width:1023px)" type="image/webp" srcset="
+                    ./img/croatia-tablet.webp    1x,
+                    ./img/croatia-tablet@2x.webp 2x
+                  ">
+                <source media="(max-width:1023px)" srcset="
+                    ./img/croatia-tablet.jpg    1x,
+                    ./img/croatia-tablet@2x.jpg 2x
+                  ">
+                <source type="image/webp" srcset="./img/croatia.webp 1x, ./img/croatia.webp 2x">
+                <img class="main-places__image" width="350" height="430" src="./img/croatia.jpg" srcset="./img/croatia@2x.jpg 2x" alt="Вид на пещеру">
+              </picture>
+            </div>
+            <div class="main-places__details">
+              <a class="main-places__button" href="#tabs" data-tabs-path="croatia">смотреть подробнее</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews-tabs">
+          <ul class="reviews-tabs__slider">
+            <li class="reviews-tabs__item">
+              <a class="
+                  reviews-tabs__button
+                  reviews-tabs__link
+                  reviews-tabs__link--active
+                " href="#tabs" data-tabs-path="greece">Греция</a>
+            </li>
+            <li class="reviews-tabs__item">
+              <a class="reviews-tabs__button reviews-tabs__link" href="#tabs" data-tabs-path="albania">Албания</a>
+            </li>
+            <li class="reviews-tabs__item">
+              <a class="reviews-tabs__button reviews-tabs__link" href="#tabs" data-tabs-path="macedonia">Македония</a>
+            </li>
+            <li class="reviews-tabs__item">
+              <a class="reviews-tabs__button reviews-tabs__link" href="#tabs" data-tabs-path="montenegro">Черногория</a>
+            </li>
+            <li class="reviews-tabs__item">
+              <a class="reviews-tabs__button reviews-tabs__link" href="#tabs" data-tabs-path="croatia">Хорватия</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reviews__description reviews__description--active" data-tabs-target="greece">
+          <div class="reviews__content">
+            <h2 class="reviews__title">Греция</h2>
+            <p class="reviews__text">
+              На севере Греции находится один из крупнейших комплексов
+              монастырей, расположенных на вершинах скал. Название его «Метеора»
+              буквально переводится как «висящие в воздухе». Этот монастырь
+              основная цель нашего путешествия в Греции. После покарения скал из
+              песчанника и обломочной горной породы, достигающих в высоту 600
+              метров, наградой будет неописуемая красота природы и атмосфера,
+              царящая в монастырях Метеоры.
+            </p>
+            <a class="reviews__button button-show" href="#">купить тур сейчас</a>
+          </div>
+          <div class="reviews__response">
+            <div class="reviews__background">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="
+                    ./img/reviews-greece-mobile.webp    1x,
+                    ./img/reviews-greece-mobile@2x.webp 2x
+                  ">
+                <source media="(max-width: 1023px)" type="image/webp" srcset="
+                    ./img/reviews-greece-tablet.webp    1x,
+                    ./img/reviews-greece-tablet@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    ./img/reviews-greece.webp    1x,
+                    ./img/reviews-greece@2x.webp 2x
+                  ">
+                <source media="(max-width: 767px)" srcset="
+                    ./img/reviews-greece-mobile.jpg    1x,
+                    ./img/reviews-greece-mobile@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    ./img/reviews-greece-tablet.jpg    1x,
+                    ./img/reviews-greece-tablet@2x.jpg 2x
+                  ">
+                <img src="./img/reviews-greece.jpg" srcset="./img/reviews-greece@2x.jpg 2x" alt="Монастырь на вершине скалы" width="430" height="596">
+              </picture>
+            </div>
+            <div class="reviews__answer">
+              <h3 class="reviews__heading">Отзывы</h3>
+              <p class="reviews__comment">
+                Метеоры в Греции можно сравнить разве что с Монсерратт в
+                Испании. Такие же высоченные скалы. Но здесь потрясает масштаб.
+                Огромная территория, высоко в горах. Ощущение такое, как будто
+                стоишь на краю света!
+              </p>
+              <div class="reviews__user">
+                <p class="reviews__name">Влада Голицина</p>
+                <img class="reviews__photo" src="img/photo-Vlada.jpg" width="37" height="38" alt="Аватарка пользователя">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__description" data-tabs-target="albania">
+          <div class="reviews__content">
+            <h2 class="reviews__title">Албания</h2>
+            <p class="reviews__text">
+              В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас
+              чистейшей водой и удивительным пляжем. Вначале кажется, что на
+              пляже вас встречает обычный, правда невероятно белоснежный и
+              слишком крупный песок. Однако, присмотревшись, можно понять, что
+              это не песок, а камни, перетёртые до такого мелкого состояния.
+            </p>
+            <a class="reviews__button button-show" href="#">купить тур сейчас</a>
+          </div>
+          <div class="reviews__response">
+            <div class="reviews__background">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="
+                    ./img/response-albania-mobile.webp    1x,
+                    ./img/response-albania-mobile@2x.webp 2x
+                  ">
+                <source media="(max-width: 1023px)" type="image/webp" srcset="
+                    ./img/response-albania-tablet.webp    1x,
+                    ./img/response-albania-tablet@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    ./img/response-albania.webp    1x,
+                    ./img/response-albania@2x.webp 2x
+                  ">
+                <source media="(max-width: 767px)" srcset="
+                    ./img/response-albania-mobile.jpg    1x,
+                    ./img/response-albania-mobile@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    ./img/response-albania-tablet.jpg    1x,
+                    ./img/response-albania-tablet@2x.jpg 2x
+                  ">
+                <img src="./img/response-albania.jpg" srcset="./img/response-albania@2x.jpg 2x" alt="побережье Албании" width="430" height="596">
+              </picture>
+            </div>
+            <div class="reviews__answer">
+              <h3 class="reviews__heading">Отзывы</h3>
+              <p class="reviews__comment">
+                Замечательный курорт, обязательно стоит посетить. В следующий
+                раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты
+                природы :)
+              </p>
+              <div class="reviews__user">
+                <p class="reviews__name">Маришка</p>
+                <img class="reviews__photo" src="img/photo-Marishka.jpg" width="37" height="38" alt="Аватарка пользователя">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__description" data-tabs-target="macedonia">
+          <div class="reviews__content">
+            <h2 class="reviews__title">Македония</h2>
+            <p class="reviews__text">
+              В Македонии нашей целью будет посетить Палаошник, который
+              расположился в удивительно красивой лесистой местности возле
+              Охридского озера и Самуиловой твердыни. А также мы заберемся на
+              вершину горы Татичев Камен где находится археологический памятник
+              Кокино в длину около 100 метров.
+            </p>
+            <a class="reviews__button button-show" href="#">купить тур сейчас</a>
+          </div>
+          <div class="reviews__response">
+            <div class="reviews__background">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="
+                    ./img/response-macedonia-mobile.webp    1x,
+                    ./img/response-macedonia-mobile@2x.webp 2x
+                  ">
+                <source media="(max-width: 1023px)" type="image/webp" srcset="
+                    ./img/response-macedonia-tablet.webp    1x,
+                    ./img/response-macedonia-tablet@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    ./img/response-macedonia.webp    1x,
+                    ./img/response-macedonia@2x.webp 2x
+                  ">
+                <source media="(max-width: 767px)" srcset="
+                    ./img/response-macedonia-mobile.jpg    1x,
+                    ./img/response-macedonia-mobile@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    ./img/response-macedonia-tablet.jpg    1x,
+                    ./img/response-macedonia-tablet@2x.jpg 2x
+                  ">
+                <img src="./img/response-macedonia.jpg" srcset="./img/response-macedonia@2x.jpg 2x" alt="Церковь на фоне море" width="430" height="596">
+              </picture>
+            </div>
+            <div class="reviews__answer">
+              <h3 class="reviews__heading">Отзывы</h3>
+              <p class="reviews__comment">
+                Я бы сказал необычное старое здание. В архитектуре я не
+                разбираюсь, но подъем в гору был очень веселым так как люди
+                оказались легкими и заводными. Красота природы впечатлила,
+                особенно после долгого пути в гору.
+              </p>
+              <div class="reviews__user">
+                <p class="reviews__name">Михаил Кузьмин</p>
+                <img class="reviews__photo" src="img/photo-Kuzmin.jpg" width="37" height="38" alt="Аватарка пользователя">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__description" data-tabs-target="montenegro">
+          <div class="reviews__content">
+            <h2 class="reviews__title">Черногория</h2>
+            <p class="reviews__text">
+              Черногория удивит нас самым большим в Европе каньоном реки Тара,
+              который в некоторых местах высотой берегов доходит до 1300 метров,
+              а шириной не превышает трех. При этом длина каньона составляет 80
+              км.
+            </p>
+            <a class="reviews__button button-show" href="#">купить тур сейчас</a>
+          </div>
+          <div class="reviews__response">
+            <div class="reviews__background">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="
+                    ./img/response-montenegro-mobile.webp    1x,
+                    ./img/response-montenegro-mobile@2x.webp 2x
+                  ">
+                <source media="(max-width: 1023px)" type="image/webp" srcset="
+                    ./img/response-montenegro-tablet.webp    1x,
+                    ./img/response-montenegro-tablet@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    ./img/response-montenegro.webp    1x,
+                    ./img/response-montenegro@2x.webp 2x
+                  ">
+                <source media="(max-width: 767px)" srcset="
+                    ./img/response-montenegro-mobile.jpg    1x,
+                    ./img/response-montenegro-mobile@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    ./img/response-montenegro-tablet.jpg    1x,
+                    ./img/response-montenegro-tablet@2x.jpg 2x
+                  ">
+                <img src="./img/response-montenegro.jpg" srcset="./img/response-montenegro@2x.jpg 2x" alt="Река в Черногории" width="430" height="596">
+              </picture>
+            </div>
+            <div class="reviews__answer">
+              <h3 class="reviews__heading">Отзывы</h3>
+              <p class="reviews__comment">
+                Неописуемой красоты каньон! Ничего прекраснее в жизни не видела,
+                разве что в фильмах :) Всем советую
+              </p>
+              <div class="reviews__user">
+                <p class="reviews__name">Анастасия Мей</p>
+                <img class="reviews__photo" src="img/photo-Mei.jpg" width="37" height="38" alt="Аватарка пользователя">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__description" data-tabs-target="croatia">
+          <div class="reviews__content">
+            <h2 class="reviews__title">Хорватия</h2>
+            <p class="reviews__text">
+              В Хорватии мы посетим необычайную пещеру названную Бередине. Ее
+              подземный мир увлечет вас на 80-ти метровую глубину через 5
+              освещенных залов, украшенных удивительными нерукотворными
+              скульптурами — сталактитами и сталагмитами — формировавшимися
+              тысячи и тысячи лет.
+            </p>
+            <a class="reviews__button button-show" href="#">купить тур сейчас</a>
+          </div>
+          <div class="reviews__response">
+            <div class="reviews__background">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="
+                    ./img/response-croatia-mobile.webp    1x,
+                    ./img/response-croatia-mobile@2x.webp 2x
+                  ">
+                <source media="(max-width: 1023px)" type="image/webp" srcset="
+                    ./img/response-croatia-tablet.webp    1x,
+                    ./img/response-croatia-tablet@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    ./img/response-croatia.webp    1x,
+                    ./img/response-croatia@2x.webp 2x
+                  ">
+                <source media="(max-width: 767px)" srcset="
+                    ./img/response-croatia-mobile.jpg    1x,
+                    ./img/response-croatia-mobile@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    ./img/response-croatia-tablet.jpg    1x,
+                    ./img/response-croatia-tablet@2x.jpg 2x
+                  ">
+                <img src="./img/response-croatia.jpg" srcset="./img/response-croatia@2x.jpg 2x" alt="Вид на пещеру" width="430" height="596">
+              </picture>
+            </div>
+            <div class="reviews__answer">
+              <h3 class="reviews__heading">Отзывы</h3>
+              <p class="reviews__comment">
+                Мы поехали всей семьей, я, моя жена и родители. Пещера просто
+                незабываема! А то, что все это формировалось тысячелетиями, мега
+                необычно. Первоначально даже не верилось, но натур ни с чем не
+                спутать по итогу :)
+              </p>
+              <div class="reviews__user">
+                <p class="reviews__name">Владимир Мулицин</p>
+                <img class="reviews__photo" src="img/photo-Mulizin.jpg" width="37" height="38" alt="Аватарка пользователя">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="price">
+        <h2 class="visually-hidden">Стоимость тура</h2>
+        <div class="price__card">
+          <div class="price__name">
+            <h3 class="price__title">Комплексный</h3>
+            <span>$1999</span>
+          </div>
+          <p class="price__text">
+            Ознакомьтесь с перечнем того, что входит в данный пакет
+          </p>
+          <ul class="price__list">
+            <li class="price__item-one">
+              Разработанный маршрут с гидом группы
+            </li>
+            <li class="price__item">Перелет, трансфер и проживание в отелях</li>
+            <li class="price__item">
+              Завтраки, ужины в отелях и ланчи на природе
+            </li>
+            <li class="price__item-other">
+              Экскурсии по удивительно красивым местам Европы
+            </li>
+          </ul>
+          <a class="price__button price__button--mod button-show" href="#">купить тур сейчас</a>
+        </div>
+
+        <div class="price__card price__card--economical">
+          <div class="price__name">
+            <h3 class="price__title">Экономный</h3>
+            <span>$1399</span>
+          </div>
+          <p class="price__text">
+            Ознакомьтесь с перечнем того, что входит в данный пакет
+          </p>
+          <ul class="price__list">
+            <li class="price__item">Разработанный маршрут с гидом группы</li>
+            <li class="price__item">Перелет и трансфер</li>
+            <li class="price__item">Проживание в хостелах при отелях</li>
+            <li class="price__item">Только завтраки в отелях</li>
+            <li class="price__item">
+              Экскурсии по удивительно красивым местам Европы
+            </li>
+          </ul>
+          <a class="price__button price__button--mod button-show" href="#">купить тур сейчас</a>
+        </div>
+
+        <div class="price__offer">
+          <h2 class="price__offer-heading">Цены</h2>
+          <p class="price__offer-text">
+            Специально для Вас мы разработали 2 пакета цен с разными условиями,
+            отталкиваясь от Ваших потребностей и возможностей. Выберите для себя
+            лучший вариант отпуска и отдохните на все 100%!
+          </p>
+          <p class="price__contact">Свяжитесь с нами</p>
+          <a class="price__tel" href="tel:+749978468446">
+            <svg width="30" height="30" class="price__phone-img">
+              <use xlink:href="./img/sprite.svg#phone"></use>
+            </svg>
+            +7 (499) -784-684-46</a>
+        </div>
+      </section>
+
+      <section class="ask-us">
+        <h2 class="visually-hidden">Стоимость тура</h2>
+        <div class="ask-us__background">
+          <picture>
+            <source media="(max-width: 1023px)" type="image/webp" srcset="img/sunset-tablet.webp 1x, img/sunset-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/sunset.webp 1x, img/sunset@2x.webp 2x">
+            <source media="(max-width: 1023px)" srcset="img/sunset-tablet.jpg 1x, img/sunset-tablet@2x.jpg 2x">
+            <img src="imgsunset.jpg" srcset="img/sunset@2x.jpg 2x" alt="Закат" width="844" height="455">
+          </picture>
+        </div>
+        <div class="ask-us__popup">
+          <h3 class="ask-us__title">У вас остались вопросы?</h3>
+          <p class="ask-us__text">
+            Оставьте свой номер или e-mail и мы свяжемся с Вами
+          </p>
+          <form class="ask-us__form" action="https://echo.htmlacademy.ru" method="POST" target="blank">
+            <div class="ask-us__field">
+              <label for="phone" class="visually-hidden">Телефон</label>
+              <input class="ask-us__phone-input" id="phone" type="tel" name="phone" placeholder="+7 Введите 10 цифр номера" required="">
+            </div>
+            <div class="ask-us__field">
+              <label for="email" class="visually-hidden">E-mail</label>
+              <input class="ask-us__email" id="email" type="email" name="email" placeholder="E-mail" required="">
+            </div>
+            <button class="ask-us__button price__button--mod" type="submit">отправить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__promo footer__promo--style">
+        <h4 class="footer__promo-title">Следующие путешествия</h4>
+        <ul class="footer__promo-list">
+          <li class="">Марсель</li>
+          <li class="">Сардиния</li>
+          <li class="footer__promo-item footer__promo-item--style">Корс</li>
+          <li class="">Ним</li>
+          <li class="">Палермо</li>
+          <li class="footer__promo-item">Ницца</li>
+          <li class="">Монпелье</li>
+          <li class="">Катания</li>
+          <li class="footer__promo-item">Монако</li>
+          <li class="">Барселона</li>
+          <li class="">Неаполь</li>
+          <li class="footer__promo-item">Динь-ле-Бен</li>
+          <li class="">Пальма</li>
+          <li class="">Рим</li>
+          <li class="footer__promo-item">Гренобль</li>
+        </ul>
+      </div>
+      <div class="footer__contacts footer__contacts--style">
+        <h4 class="footer__contacts-title">Наши контакты</h4>
+        <a class="footer__contacts-email" href="puteshestviemechta@gmail.ru">
+          <svg width="26" height="20" class="footer__email-img">
+          <use xlink:href="./img/sprite.svg#mail"></use>
+        </svg> 
+          <span>puteshestviemechta@gmail.ru</span>
+        </a>
+        <a class="footer__contacts-tel" href="tel:+749978468446">
+          <svg width="30" height="30" class="footer__phone-img">
+          <use xlink:href="./img/sprite.svg#phone"></use>
+        </svg>
+          <span>+7 (499)-784-684-46</span>
+        </a>
+      </div>
+      <div class="footer__corporate">
+        <h4 class="footer__corporate-title">Корпоративные путешествия</h4>
+        <p class="footer__corporate-text">
+          Также вы можете заказать индивидуальное путешествие под вашу компанию.
+          Подобные туры очень сближают компанию, помогают поддерживать
+          корпоративный дух, а также являются оличным времяпрепровождением
+        </p>
+      </div>
+    </footer>
+
+    <div class="popup">
+      <div class="popup__wrapper">
+        <picture>
+          <source type="image/webp" srcset="img/pop-up-buy.webp 1x, img/pop-up-buy@2x.webp 2x">
+          <img src="img/pop-up-buy.jpg" srcset="img/pop-up-buy@2x.jpg 2x" width="338" height="444" alt="Скалистый берег">
+        </picture>
+        <div class="popup__form-wrapper">
+          <h2 class="popup__title">Купить тур</h2>
+          <form class="popup__form" action="https://echo.htmlacademy.ru" method="POST" target="blank">
+            <div class="popup__item">
+              <label for="phone" class="visually-hidden">Телефон</label>
+              <input class="popup__tel" id="tel" type="tel" name="phone" placeholder="+7 Введите 10 цифр номера" required="">
+            </div>
+            <div class="popup__item">
+              <label for="email" class="visually-hidden">E-mail</label>
+              <input class="popup__email" id="email" type="email" name="email" placeholder="E-mail" required="">
+            </div>
+            <button class="popup__button price__button--mod" type="submit">отправить</button>
+            <button class="popup__button-close button-close"><img src="img/modal-close.svg" alt="закрыть" width="22" height="22"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>

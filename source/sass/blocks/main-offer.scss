@@ -1,0 +1,136 @@
+.main-offer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 860px;
+  color: $white;
+}
+
+.main-offer__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $background-hero;
+  z-index: -10;
+}
+
+.main-offer__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-offer__header-title {
+  grid-column: 2/3;
+  width: 412px;
+  margin-top: 185px;
+  margin-left: 115px;
+}
+
+.main-offer__title {
+  font-size: 55px;
+  line-height: 80px;
+  margin: 0;
+  padding-bottom: 29px;
+}
+
+.main-offer__text {
+  font-size: 16px;
+  line-height: 27.2px;
+  padding-right: 49px;
+  margin-bottom: 34px;
+  margin: 0;
+}
+
+.main-offer__button {
+  text-transform: uppercase;
+  background-color: $accent;
+  margin-top: 36px;
+  width: 340px;
+  padding: 30px 40px;
+  border: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: $white;
+  cursor: pointer;
+  line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: $tablet-max) {
+  .main-offer {
+    min-height: 344px;
+    grid-template-columns: 1fr;
+  }
+
+  .main-offer__background {
+    height: 100%;
+  }
+
+  .main-offer__header-title {
+    grid-column: 1/-1;
+    margin: 60px auto;
+    text-align: center;
+  }
+
+  .main-offer__title {
+    font-size: 30px;
+    line-height: 45px;
+    padding-bottom: 15px;
+    letter-spacing: normal;
+  }
+
+  .main-offer__text {
+    padding-right: 0;
+    margin-bottom: 0;
+    letter-spacing: -0.47px;
+  }
+
+  .main-offer__button {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .main-offer {
+    grid-template-rows: 1fr;
+  }
+
+  .main-offer__background {
+    position: static;
+    height: 235px;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+  }
+
+  .main-offer__image {
+    height: 235px;
+  }
+
+  .main-offer__header-title {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin: 0 auto;
+    width: auto;
+  }
+
+  .main-offer__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 81px auto;
+    padding: 0 7px;
+    max-width: 300px;
+  }
+
+  .main-offer__text {
+    color: $grey;
+    padding: 20px 10px 12px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
